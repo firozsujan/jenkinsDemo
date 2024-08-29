@@ -1,10 +1,20 @@
 package com.example.jenkinsDemo;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JenkinsDemoApplication {
+public class JenkinsDemoApplication implements CommandLineRunner {
+	@Override
+	public void run(String... args) throws Exception {
+		logger.info("It is second logger");
+		logger.info("Continuous Integration Test ");
+	}
+
+	public static final Logger logger = LoggerFactory.getLogger(JenkinsDemoApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(JenkinsDemoApplication.class, args);
