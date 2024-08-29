@@ -13,6 +13,7 @@ public class JenkinsDemoApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		logger.info("It is second logger");
 		logger.info("Continuous Integration Test ");
+		logger.info("Added logger by RAHUL !!");
 	}
 
 	public static void main(String[] args) {
