@@ -8,10 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JenkinsDemoApplication {
 
-	static Logger logger = LoggerFactory.getLogger(JenkinsDemoApplication.class);
-	public static void main(String[] args) {
-		logger.info("This is a running job");
-		SpringApplication.run(JenkinsDemoApplication.class, args);
-	}
+    static Logger logger = LoggerFactory.getLogger(JenkinsDemoApplication.class);
+
+    public static void main(String[] args) {
+        logger.info("This is a running job");
+        SpringApplication.run(JenkinsDemoApplication.class, args);
+    }
 
 }
